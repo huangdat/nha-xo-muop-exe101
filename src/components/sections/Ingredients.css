@@ -1,0 +1,66 @@
+/* Ingredients Section Styles */
+.ingredients-section {
+  background-color: var(--color-bg-card);
+  position: relative;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.ingredient-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* So le chiều cao để hàng ảnh có nhịp thay vì một dải đều tăm tắp */
+.ingredient-card:nth-child(even) {
+  margin-top: clamp(0px, 5vw, 72px);
+}
+
+.ingredient-media {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-alt);
+}
+
+.ingredient-body {
+  padding: 20px 0 0;
+}
+
+.ingredient-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  color: var(--color-primary-dark);
+  margin-bottom: 10px;
+}
+
+.ingredient-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 900px) {
+  .ingredients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 36px;
+  }
+
+  .ingredient-card:nth-child(even) {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .ingredient-title {
+    font-size: 1.12rem;
+  }
+}

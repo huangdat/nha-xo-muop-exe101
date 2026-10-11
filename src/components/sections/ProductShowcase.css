@@ -1,0 +1,155 @@
+/* Product Showcase Styles */
+.showcase-section {
+  background-color: var(--color-bg);
+  position: relative;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: start;
+  gap: clamp(40px, 7vw, 112px);
+}
+
+.showcase-info {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Khung ảnh bám theo khi đọc bảng thông số */
+.showcase-media {
+  position: sticky;
+  top: calc(var(--header-height) + 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Sân khấu 3D: không đóng khung thẻ — sản phẩm đứng trên một quầng sáng ấm */
+.showcase-main-card {
+  position: relative;
+  aspect-ratio: 1 / 0.92;
+  background:
+    radial-gradient(58% 46% at 50% 62%, rgba(206, 184, 138, 0.42) 0%, transparent 72%),
+    radial-gradient(40% 34% at 30% 22%, rgba(255, 252, 244, 0.95) 0%, transparent 75%);
+}
+
+.showcase-main-card.is-fallback,
+.showcase-main-card .product3d.is-fallback img {
+  border-radius: var(--radius-md);
+}
+
+/* Nút chọn góc nhìn: chữ gạch chân, cùng ngôn ngữ với bộ lọc thư viện */
+.showcase-views {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 26px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-solid);
+}
+
+.showcase-view-btn {
+  position: relative;
+  padding: 10px 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+}
+
+.showcase-view-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 1px;
+  background-color: var(--color-primary-dark);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.showcase-view-btn:hover,
+.showcase-view-btn.active {
+  color: var(--color-primary-dark);
+}
+
+.showcase-view-btn.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.showcase-prod-title {
+  font-size: clamp(2.1rem, 4.4vw, 3.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--color-primary-dark);
+  margin-bottom: 22px;
+}
+
+.showcase-prod-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  max-width: 30em;
+}
+
+/* Bảng thông số kiểu kẻ dòng */
+.showcase-specs {
+  margin: clamp(32px, 4vw, 56px) 0 clamp(28px, 3vw, 44px);
+  border-top: 1px solid var(--color-primary-dark);
+}
+
+.showcase-spec-item {
+  display: grid;
+  grid-template-columns: minmax(0, 0.42fr) minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-border-solid);
+}
+
+.spec-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  padding-top: 3px;
+}
+
+.spec-value {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.showcase-cta {
+  display: flex;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .showcase-media {
+    position: static;
+  }
+}
+
+@media (max-width: 576px) {
+  .showcase-spec-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 14px 0;
+  }
+
+  .showcase-cta .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EB"/>
+      <stop offset="100%" stop-color="#EBE3D3"/>
+    </linearGradient>
+    <filter id="scShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#2D3A2C" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="600" fill="url(#scBg)"/>
+
+  <!-- Pedestal circle -->
+  <ellipse cx="350" cy="460" rx="240" ry="40" fill="#DFD6C4"/>
+  <ellipse cx="350" cy="450" rx="180" ry="24" fill="#C9BEA8"/>
+
+  <!-- Soap with Loofah -->
+  <g transform="translate(350, 310)" filter="url(#scShadow)">
+    <rect x="-160" y="-130" width="320" height="230" rx="42" fill="#3B6747"/>
+    <!-- Embedded loofah side -->
+    <rect x="-140" y="-110" width="150" height="190" rx="28" fill="#E6D3B1"/>
+    <!-- Loofah mesh pattern inside -->
+    <circle cx="-65" cy="-45" r="16" fill="#D4BD94" opacity="0.7"/>
+    <circle cx="-65" cy="15" r="18" fill="#D4BD94" opacity="0.7"/>
+    <circle cx="-105" cy="-10" r="14" fill="#D4BD94" opacity="0.7"/>
+    <path d="M-130,-90 Q-65,-30 0,-90" stroke="#9A7C52" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M-130,0 Q-65,40 0,0" stroke="#9A7C52" stroke-width="2" fill="none" opacity="0.4"/>
+    <path d="M-130,70 Q-65,30 0,70" stroke="#9A7C52" stroke-width="2" fill="none" opacity="0.4"/>
+    
+    <!-- Soap right side branding -->
+    <line x1="30" y1="30" x2="120" y2="30" stroke="#CDE2D1" stroke-width="1.5" opacity="0.7"/>
+
+    <!-- Hanging loop -->
+    <path d="M-160,-50 C-210,-90 -170,-160 -100,-130" stroke="#A88B63" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Botanical leaves background -->
+  <g transform="translate(100, 150)" opacity="0.4">
+    <path d="M0,80 Q40,40 80,0" stroke="#2D5A27" stroke-width="3" fill="none"/>
+    <ellipse cx="30" cy="50" rx="16" ry="8" fill="#4A7C59" transform="rotate(-30 30 50)"/>
+    <ellipse cx="65" cy="20" rx="16" ry="8" fill="#4A7C59" transform="rotate(30 65 20)"/>
+  </g>
+</svg>

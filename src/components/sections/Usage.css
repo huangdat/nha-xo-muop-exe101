@@ -1,0 +1,142 @@
+/* Usage Section Styles */
+.usage-section {
+  background-color: var(--color-bg-card);
+  position: relative;
+}
+
+.usage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--color-primary-dark);
+  margin-bottom: clamp(40px, 5vw, 72px);
+}
+
+.usage-step-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px clamp(16px, 2vw, 32px) 8px;
+}
+
+.usage-step-card:first-child {
+  padding-left: 0;
+}
+
+.usage-step-card + .usage-step-card {
+  border-left: 1px solid var(--color-border-solid);
+}
+
+/* Chữ số viền rỗng, tô đặc khi hover */
+.usage-number {
+  font-family: var(--font-serif);
+  font-size: clamp(3.2rem, 5.6vw, 5rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-primary);
+  margin-bottom: clamp(28px, 4vw, 64px);
+  transition: color 0.6s ease;
+}
+
+.usage-step-card:hover .usage-number {
+  color: var(--color-primary);
+}
+
+.usage-step-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  margin-bottom: 12px;
+  color: var(--color-primary-dark);
+}
+
+.usage-step-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+/* Ghi chú bảo quản: lệch phải, kẻ trái */
+.usage-tip-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 620px;
+  margin-left: auto;
+  padding: 4px 0 4px 28px;
+  border-left: 1px solid var(--color-secondary-light);
+}
+
+.usage-tip-icon {
+  color: var(--color-secondary);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.usage-tip-title {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.usage-tip-content {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .usage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .usage-step-card {
+    padding-bottom: 32px;
+  }
+
+  .usage-step-card:nth-child(odd) {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .usage-step-card:nth-child(n + 3) {
+    border-top: 1px solid var(--color-border-solid);
+  }
+
+  .usage-number {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .usage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .usage-step-card,
+  .usage-step-card + .usage-step-card {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    column-gap: 12px;
+    padding: 22px 0;
+    border-left: none;
+  }
+
+  .usage-step-card + .usage-step-card {
+    border-top: 1px solid var(--color-border-solid);
+  }
+
+  .usage-number {
+    grid-row: span 2;
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+}

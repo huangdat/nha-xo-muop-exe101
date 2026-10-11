@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <rect width="300" height="300" fill="#F4EFE6"/>
+  <!-- Loofah texture detail -->
+  <circle cx="150" cy="150" r="100" fill="#E8D7B8"/>
+  <circle cx="150" cy="150" r="92" fill="none" stroke="#CBB185" stroke-width="2" stroke-dasharray="6,4"/>
+  <ellipse cx="150" cy="120" rx="18" ry="24" fill="#F4EFE6"/>
+  <ellipse cx="120" cy="170" rx="22" ry="18" fill="#F4EFE6"/>
+  <ellipse cx="180" cy="170" rx="22" ry="18" fill="#F4EFE6"/>
+</svg>

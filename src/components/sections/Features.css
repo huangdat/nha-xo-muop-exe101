@@ -1,0 +1,25 @@
+/* Features Section Styles */
+.features-section {
+  background-color: var(--color-bg-alt);
+}
+
+.features-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: clamp(28px, 4vw, 64px);
+  row-gap: clamp(48px, 6vw, 88px);
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+}

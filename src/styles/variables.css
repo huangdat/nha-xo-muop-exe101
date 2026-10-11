@@ -1,0 +1,68 @@
+/* ==============================================================================
+   CSS VARIABLES & DESIGN SYSTEM TOKENS
+   Dễ dàng tùy biến bảng màu, font chữ, kích thước tại đây
+   ============================================================================== */
+
+:root {
+  /* Bảng màu tự nhiên (Natural Organic Palette) */
+  --color-primary: #2D5A27;         /* Xanh lá tự nhiên trầm ấm */
+  --color-primary-light: #447C3D;   /* Xanh lá tươi sáng */
+  --color-primary-dark: #1E3F1A;    /* Xanh lá đậm */
+  --color-primary-soft: #EBF4EA;    /* Nền xanh nhạt dịu mắt */
+  
+  --color-secondary: #8C6D53;       /* Nâu đất / vỏ hạt mộc */
+  --color-secondary-light: #BA9B7B; /* Nâu nhạt xơ mướp */
+  --color-secondary-soft: #F6F0E6;  /* Nền nâu kem nhạt */
+  
+  --color-accent: #D4A373;          /* Vàng đất ấm áp */
+  --color-accent-soft: #FCF4EB;
+
+  /* Màu nền */
+  --color-bg: #FAF7F2;              /* Kem tự nhiên dịu dàng */
+  --color-bg-card: #FFFFFF;         /* Trắng tinh khôi cho card */
+  --color-bg-alt: #F3ECE1;          /* Be / Sand nhạt cho các section xen kẽ */
+  --color-bg-alt-soft: #F8F3EA;
+
+  /* Màu chữ */
+  --color-text: #263328;            /* Chữ chính xanh đen trầm dễ đọc */
+  --color-text-muted: #647366;      /* Chữ phụ xám xanh thực vật */
+  --color-text-light: #8E9C90;      /* Chữ mờ nhẹ */
+  --color-text-white: #FAF9F6;      /* Chữ trắng ngà */
+
+  /* Đường viền & Phân cách */
+  --color-border: #E5DECFA0;
+  --color-border-solid: #E2D9CA;
+  --color-border-focus: #2D5A27;
+
+  /* Font chữ */
+  --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+
+  /* Đổ bóng tự nhiên (Soft Natural Shadows) */
+  --shadow-xs: 0 1px 3px rgba(38, 51, 40, 0.05);
+  --shadow-sm: 0 4px 12px rgba(38, 51, 40, 0.06);
+  --shadow-md: 0 8px 24px rgba(38, 51, 40, 0.08);
+  --shadow-lg: 0 18px 42px rgba(38, 51, 40, 0.11);
+  --shadow-hover: 0 14px 32px rgba(45, 90, 39, 0.14);
+
+  /* Bo góc (Border Radii) */
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* Hiệu ứng chuyển động (Transitions) */
+  --transition-fast: 0.18s ease;
+  --transition-normal: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Bố cục container */
+  --section-space: clamp(88px, 11vw, 168px);
+  --container-max-width: 1240px;
+  --container-padding: clamp(20px, 4vw, 48px);
+  --header-height: 76px;
+}

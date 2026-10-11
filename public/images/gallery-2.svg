@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <rect width="500" height="400" fill="#F0F4ED"/>
+  <!-- Cutting & mold tray -->
+  <rect x="80" y="100" width="340" height="200" rx="16" fill="#D8E5D5" stroke="#9BB894" stroke-width="2"/>
+  <rect x="110" y="130" width="70" height="70" rx="12" fill="#EBD9BA"/>
+  <rect x="210" y="130" width="70" height="70" rx="12" fill="#EBD9BA"/>
+  <rect x="310" y="130" width="70" height="70" rx="12" fill="#EBD9BA"/>
+  <rect x="110" y="215" width="70" height="60" rx="12" fill="#EBD9BA"/>
+  <rect x="210" y="215" width="70" height="60" rx="12" fill="#EBD9BA"/>
+  <rect x="310" y="215" width="70" height="60" rx="12" fill="#EBD9BA"/>
+  <!-- Handcraft knife / tool symbol -->
+  <line x1="390" y1="70" x2="430" y2="120" stroke="#8C6D53" stroke-width="6" stroke-linecap="round"/>
+</svg>

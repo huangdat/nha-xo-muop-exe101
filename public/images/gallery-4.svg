@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <rect width="500" height="400" fill="#F5F8F6"/>
+  <!-- Bathroom tile aesthetic backdrop -->
+  <line x1="0" y1="130" x2="500" y2="130" stroke="#E2ECE5" stroke-width="2"/>
+  <line x1="0" y1="260" x2="500" y2="260" stroke="#E2ECE5" stroke-width="2"/>
+  <!-- Wooden peg / hook -->
+  <circle cx="250" cy="70" r="14" fill="#8C6D53"/>
+  <!-- Hanging rope -->
+  <path d="M250,70 Q250,150 250,170" stroke="#B39369" stroke-width="5" fill="none"/>
+  <!-- Hanging loofah soap bar -->
+  <g transform="translate(250, 240)">
+    <rect x="-65" y="-70" width="130" height="150" rx="28" fill="#3D6B48"/>
+    <!-- Loofah center -->
+    <circle cx="0" cy="5" r="42" fill="#E8D5B5"/>
+    <ellipse cx="0" cy="-10" rx="9" ry="12" fill="#3D6B48" opacity="0.3"/>
+    <ellipse cx="-12" cy="12" rx="11" ry="9" fill="#3D6B48" opacity="0.3"/>
+    <ellipse cx="12" cy="12" rx="11" ry="9" fill="#3D6B48" opacity="0.3"/>
+  </g>
+  <!-- Water drops -->
+  <path d="M250,335 C253,342 256,346 256,350 C256,354 253,357 250,357 C247,357 244,354 244,350 C244,346 247,342 250,335 Z" fill="#99C2A2"/>
+</svg>

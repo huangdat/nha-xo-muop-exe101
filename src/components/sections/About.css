@@ -1,0 +1,115 @@
+/* About Section Styles */
+.about-section {
+  background-color: var(--color-bg-card);
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(40px, 7vw, 112px);
+}
+
+/* Ảnh đứng yên trong lúc cột chữ cuộn qua */
+.about-media-col {
+  position: sticky;
+  top: calc(var(--header-height) + 32px);
+}
+
+.about-image-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background-color: var(--color-bg-alt);
+}
+
+.about-content-col {
+  display: flex;
+  flex-direction: column;
+  padding-top: clamp(0px, 4vw, 56px);
+}
+
+.about-lead {
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  margin-bottom: 28px;
+}
+
+.about-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  max-width: 36em;
+  margin-bottom: 16px;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: clamp(28px, 4vw, 52px);
+  border-top: 1px solid var(--color-border-solid);
+}
+
+.about-value-item {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 0.8fr) minmax(0, 1.3fr);
+  align-items: baseline;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--color-border-solid);
+}
+
+.about-value-item > div:last-child {
+  display: contents;
+}
+
+.about-value-icon {
+  color: var(--color-primary);
+  align-self: center;
+}
+
+.about-value-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-primary-dark);
+}
+
+.about-value-desc {
+  font-size: 0.93rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-media-col {
+    position: static;
+    width: 82%;
+  }
+
+  .about-image-card {
+    aspect-ratio: 5 / 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-value-item {
+    grid-template-columns: 24px 1fr;
+    row-gap: 6px;
+  }
+
+  .about-value-desc {
+    grid-column: 2;
+  }
+}

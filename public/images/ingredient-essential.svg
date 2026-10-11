@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#FBF8F3"/>
+  <!-- Essential oil bottle with dropper -->
+  <g transform="translate(200, 130)">
+    <!-- Dropper tip -->
+    <rect x="-8" y="-70" width="16" height="20" rx="4" fill="#5A4A3A"/>
+    <rect x="-14" y="-50" width="28" height="15" rx="3" fill="#3D3025"/>
+    <!-- Bottle body -->
+    <rect x="-35" y="-35" width="70" height="105" rx="12" fill="#755B42" stroke="#523E2C" stroke-width="2"/>
+    <!-- Label -->
+    <rect x="-26" y="-15" width="52" height="65" rx="6" fill="#FAF6EE"/>
+    <circle cx="0" cy="8" r="14" fill="#E8F2EA"/>
+    <path d="M0,0 C6,-8 14,-6 14,-14 C7,-12 3,-6 0,0 Z" fill="#3B6747" transform="translate(-7, 15)"/>
+  </g>
+</svg>

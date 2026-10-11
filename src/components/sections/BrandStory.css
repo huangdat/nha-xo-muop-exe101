@@ -1,0 +1,89 @@
+/* BrandStory Section Styles */
+.brand-story-section {
+  background-color: var(--color-bg-alt);
+  position: relative;
+}
+
+.brand-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: clamp(40px, 7vw, 112px);
+}
+
+.brand-story-media {
+  position: sticky;
+  top: calc(var(--header-height) + 32px);
+}
+
+.brand-story-image-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background-color: var(--color-secondary-soft);
+}
+
+.brand-story-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Câu trích là điểm nhấn của section, không đóng hộp */
+.brand-story-quote-card {
+  margin: clamp(8px, 2vw, 28px) 0 clamp(28px, 4vw, 52px);
+}
+
+.brand-story-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.9vw, 2.6rem);
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+  color: var(--color-primary);
+  text-wrap: balance;
+}
+
+.brand-story-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.brand-story-author::before {
+  content: '';
+  width: 44px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.brand-story-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  max-width: 36em;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .brand-story-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .brand-story-media {
+    position: static;
+    width: 82%;
+    margin-left: auto;
+  }
+
+  .brand-story-image-card {
+    aspect-ratio: 5 / 4;
+  }
+}
